@@ -1,0 +1,8 @@
+[
+    { "name": "Lamborghini Aventador", "image": "aventador.jpg" },
+    { "name": "Porsche 911", "image": "porsche911.jpg" },
+    { "name": "Honda Civic", "image": "civic.jpg" },
+    { "name": "Toyota Camry", "image": "camry.jpg" },
+    { "name": "Ferrari 488", "image": "ferrari488.jpg" }, 
+    { "name": "Bugatti Chiron", "image": "chiron.jpg" }
+]
