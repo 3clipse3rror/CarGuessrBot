@@ -2,8 +2,9 @@ import discord
 import os
 import random
 import json
+import os
+TOKEN = os.getenv("DISCORD_TOKEN")
 
-TOKEN = "MTUzOTExODQ3MDEzMjc5MzM4NQ.GvVp0a.3I3LszKvmoyQDhu03f1EviW7CkOsvhBmHh40ZU"
 
 intents = discord.Intents.default()
 intents.message_content = True
