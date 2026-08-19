@@ -2,37 +2,54 @@ import discord
 import os
 import random
 import json
-import os
-TOKEN = os.getenv("DISCORD_TOKEN")
+import asyncio
 
+TOKEN = os.getenv("DISCORD_TOKEN")
 
 intents = discord.Intents.default()
 intents.message_content = True
-client = discord.Client(intents=intents)
+
+bot = discord.Bot(intents=intents)
 
 with open("car_data.json", "r") as f:
     car_data = json.load(f)
 
-@client.event
+# Store current round info
+current_car = None
+timer_task = None
+
+
+async def start_timer(channel, seconds):
+    global current_car, timer_task
+    await asyncio.sleep(seconds)
+
+    # If timer finishes AND the car wasn't guessed
+    if current_car is not None:
+        answer = current_car["name"]
+        await channel.send(f"⏰ Time's up! The correct answer was **{answer}**.")
+        current_car = None
+        timer_task = None
+
+
+@bot.event
 async def on_ready():
-    print(f"Logged in as {client.user}")
+    print(f"Logged in as {bot.user}")
 
-@client.event
-async def on_message(message):
-    if message.author.bot:
-        return
 
-    if message.content.lower() == "!car":
-        car = random.choice(car_data)
-        await message.channel.send(file=discord.File(f"car_images/{car['image']}"))
-        await message.channel.send("Guess the car!")
+@bot.slash_command(description="Start a new car guessing round")
+async def car(ctx):
+    global current_car, timer_task
 
-    if message.content.lower().startswith("guess "):
-        guess = message.content[6:].lower()
-        for car in car_data:
-            if guess == car["name"].lower():
-                await message.channel.send("Correct!")
-                return
-        await message.channel.send("Wrong guess!")
+    # Pick a random car
+    car = random.choice(car_data)
+    current_car = car
 
-client.run(TOKEN)
+    # Send image + prompt
+    await ctx.respond(
+        file=discord.File(f"car_images/{car['image']}")
+    )
+    await ctx.send("Guess the car!")
+
+    # Start timer (20 seconds — change if you want)
+    if timer_task is not None:
+        timer_task
