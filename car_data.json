@@ -3,6 +3,7 @@
     { "name": "Porsche 911", "image": "porsche911.jpg" },
     { "name": "Honda Civic", "image": "civic.jpg" },
     { "name": "Toyota Camry", "image": "camry.jpg" },
+    { "name": "Kia Soul", "image": "soul.jpg" },
     { "name": "Ferrari 488", "image": "ferrari488.jpg" }, 
     { "name": "Bugatti Chiron", "image": "chiron.jpg" }
 ]
