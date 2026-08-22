@@ -500,7 +500,7 @@
             { "name": "Geely Galaxy", "image": "geelygalaxy.jpg" },
             { "name": "Geely Monjaro", "image": "geelymonjaro.jpg" },
             { "name": "Geely Okavango", "image": "geelyokavango.jpg" },
-            { "name": "Geely Preface", "image": "geelypreface.jpg" }
+            { "name": "Geely Preface", "image": "geelypreface.jpg" },
             { "name": "Geely Starray", "image": "geelystarray.jpg" },
             { "name": "Geely Tugella", "image": "geelytugella.jpg" },
             { "name": "Gemballa Avalanche", "image": "gemballaavalanche.jpg" },
@@ -1091,7 +1091,7 @@
             { "name": "Techart 718 Cayman S", "image": "techart718caymans.jpg" },
             { "name": "Techart GT Street", "image": "techartgtstreet.jpg" },
             { "name": "Techrules Ren", "image": "techrulesren.jpg" },
-            { "name": "Tesla Cybercab", "image": "teslacybercab.jpg" }
+            { "name": "Tesla Cybercab", "image": "teslacybercab.jpg" },
             { "name": "Tesla Cybertruck", "image": "teslacybertruck.jpg" },
             { "name": "Tesla Model 3", "image": "teslamodel3.jpg" },
             { "name": "Tesla Model S Plaid", "image": "teslamodelsplaid.jpg" },
