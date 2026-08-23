@@ -626,7 +626,7 @@
             { "name": "Jaguar F-Pace S", "image": "jaguarfpaces.jpg" },
             { "name": "Jaguar F-Type SVR", "image": "jaguarftypesvr.jpg" },
             { "name": "Jaguar I-Pace", "image": "jaguaripace.jpg" },
-            { "name": "Jaguar Lightweight E-Type", "image": "jaguarlightweightetype.jpg" }
+            { "name": "Jaguar Lightweight E-Type", "image": "jaguarlightweightetype.jpg" },
             { "name": "Jaguar Sport XJR-15", "image": "jaguarsportxjr15.jpg" },
             { "name": "Jaguar XE-S", "image": "jaguarxes.jpg" },
             { "name": "Jaguar XFR-S", "image": "jaguarxfrs.jpg" },
@@ -1219,7 +1219,7 @@
             { "name": "Westfield XTR4", "image": "westfieldxtr4.jpg" },
             { "name": "Wiesmann GT", "image": "wiesmanngt.jpg" },
             { "name": "Wiesmann Roadster MF3", "image": "wiesmannroadstermf3.jpg" },
-            { "name": "Wolfrace Sonic", "image": "wolfracesonic.jpg" }
+            { "name": "Wolfrace Sonic", "image": "wolfracesonic.jpg" },
             { "name": "Wrapped Flyer", "image": "wrappedflyer.jpg" },
             { "name": "Xiaomi SU7 Ultra", "image": "xiaomisu7ultra.jpg" },
             { "name": "XPeng G6", "image": "xpengg6.jpg" },
